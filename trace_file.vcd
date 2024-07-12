@@ -1,0 +1,84 @@
+$date
+     Jul 12, 2024       06:44:24
+$end
+
+$version
+              SystemC 2.3.0-ASI --- Sep 10 2012 16:44:06
+$end
+
+$timescale
+     1 ns
+$end
+
+$scope module SystemC $end
+$var wire    1  aaa  clk       $end
+$var wire    8  aab  A [7:0]  $end
+$var wire    8  aac  B [7:0]  $end
+$var wire    8  aad  S [7:0]  $end
+$var wire    8  aae  Cin [7:0]  $end
+$var wire    8  aaf  Cout [7:0]  $end
+$var wire    8  aag  Sout [7:0]  $end
+$var wire    8  aah  Result [7:0]  $end
+$var wire    8  aai  Result2 [7:0]  $end
+$var wire   16  aaj  TOTALRESULT [15:0]  $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+1aaa
+b100 aab
+b10 aac
+b0 aad
+b0 aae
+b0 aaf
+b0 aag
+b1000 aah
+b0 aai
+b1000 aaj
+$end
+
+#5
+0aaa
+
+#10
+1aaa
+b111 aab
+b111 aac
+b110001 aah
+b110001 aaj
+
+#15
+0aaa
+
+#20
+1aaa
+b11111111 aab
+b11111111 aac
+b11111110 aad
+b1111111 aae
+b1111111 aaf
+b1 aah
+b11111110 aai
+b1111111000000001 aaj
+
+#25
+0aaa
+
+#30
+1aaa
+b1011010 aab
+b1001101 aac
+b110110 aad
+b0 aae
+b0 aaf
+b10010 aah
+b11011 aai
+b1101100010010 aaj
+
+#35
+0aaa
+
